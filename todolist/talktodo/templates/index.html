@@ -1,0 +1,14 @@
+
+{% include 'partials/header.html' %}
+<h3>TODO LIST</h3>
+<ul>
+    {% for todo in todos %}
+
+        <li>{{ todo.title }}</li>
+    {% endfor %}
+</ul>
+  <a href = '/todo/add'>Go Add</a>
+{% include 'partials/footer.html' %}
+
+
+
